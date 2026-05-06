@@ -464,6 +464,41 @@
     }
     .card-link:hover { gap: 8px; }
 
+    /* ── Card context ── */
+    .card-context {
+      margin-top: 20px;
+      padding: 16px 0 0;
+      border-top: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .ctx-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .ctx-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: var(--accent-soft);
+      padding: 2px 8px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .ctx-text {
+      color: var(--text-light);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
     /* ── Stack section ── */
     .stack-section {
       background: var(--bg-warm);
@@ -669,6 +704,20 @@
             アナロジー・図解・ステップ解説の3段構成で関数の動作を視覚的に説明するカスタムスキル。
             <code>is_palindrome</code> を折り紙の比喩で直感的に伝える。
           </div>
+          <div class="card-context">
+            <div class="ctx-row">
+              <span class="ctx-label">課題</span>
+              <span class="ctx-text">コードレビューで「なぜそう動くか」を言葉だけで伝えるのが難しかった</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">解決策</span>
+              <span class="ctx-text">Claude API を使い、アナロジー・図解・ステップの3層で自動説明するスキルを実装</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">成果</span>
+              <span class="ctx-text">非エンジニアでも関数の動作を直感的に理解できる説明を1コマンドで生成</span>
+            </div>
+          </div>
           <div class="card-footer">
             <span class="card-date">2026 · 05 · 03</span>
             <span class="card-link">拡大して見る <span>→</span></span>
@@ -697,6 +746,20 @@
             自然言語の指示だけで Claude Code が実装したパズルゲーム。
             スコア・レベル・POPS カウンター搭載のフル機能ブラウザゲーム。
           </div>
+          <div class="card-context">
+            <div class="ctx-row">
+              <span class="ctx-label">課題</span>
+              <span class="ctx-text">「Vibe Coding でどこまで作れるか」を実証する題材が必要だった</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">解決策</span>
+              <span class="ctx-text">コードを一行も手書きせず、自然言語の指示のみでゲームロジックを全実装</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">成果</span>
+              <span class="ctx-text">スコア・レベル・POPS カウンター搭載のフル機能ゲームを数時間で完成</span>
+            </div>
+          </div>
           <div class="card-footer">
             <span class="card-date">2026 · 05 · 05</span>
             <span class="card-link">拡大して見る <span>→</span></span>
@@ -723,6 +786,20 @@
           <div class="card-title">AI 開発環境プレビュー</div>
           <div class="card-desc">
             Claude Code を VS Code 上で操作し、自然言語でコードを生成・編集している開発環境の記録。Vibe Coding の実際のワークフローを可視化。
+          </div>
+          <div class="card-context">
+            <div class="ctx-row">
+              <span class="ctx-label">課題</span>
+              <span class="ctx-text">AI 駆動開発の実際のワークフローを第三者に伝える手段がなかった</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">解決策</span>
+              <span class="ctx-text">VS Code 内での Claude Code 操作を画面収録し、開発フローそのものをポートフォリオ化</span>
+            </div>
+            <div class="ctx-row">
+              <span class="ctx-label">成果</span>
+              <span class="ctx-text">「AIとペアプログラミングする」体験を視覚的に証明するアセットとして機能</span>
+            </div>
           </div>
           <div class="card-footer">
             <span class="card-date">2026 · 05 · 06</span>
